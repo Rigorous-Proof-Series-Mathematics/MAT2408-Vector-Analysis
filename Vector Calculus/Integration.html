@@ -13268,6 +13268,49 @@ div#notebook {
         .proof-block h6 {
             text-indent: 0 !important;
         }
+    
+        
+        .theorem-proof-block {
+            margin: 24px 55px;
+            border-radius: 14px;
+            background: #f7f7f7;
+            border-left: 5px solid #555;
+            overflow: hidden;
+        }
+
+        .theorem-proof-block summary {
+            cursor: pointer;
+            padding: 22px 26px;
+            list-style: none;
+        }
+
+        .theorem-proof-block summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .theorem-summary h1,
+        .theorem-summary h2,
+        .theorem-summary h3,
+        .theorem-summary h4,
+        .theorem-summary p {
+            text-indent: 0 !important;
+        }
+
+        .proof-content {
+            padding: 22px 26px;
+            border-top: 1px solid rgba(0,0,0,0.12);
+            background: white;
+        }
+
+        .proof-content p,
+        .proof-content h1,
+        .proof-content h2,
+        .proof-content h3,
+        .proof-content h4,
+        .proof-content ul,
+        .proof-content ol {
+            text-indent: 0 !important;
+        }
         </style>
 </head>
 <body>
@@ -13391,6 +13434,74 @@ $$</p>
 \alpha(u\cdot w)+\beta(v\cdot w).
 $$</p>
 <p>This proves the theorem.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=2bf5d006"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<details class="theorem-proof-block">
+<summary class="theorem-summary">
+<h2 id="Theorem:-Linearity-of-the-Dot-Product">Theorem: Linearity of the Dot Product<a class="anchor-link" href="#Theorem:-Linearity-of-the-Dot-Product">¶</a></h2><p>Let $u,v,w \in \mathbb{R}^n$ and let $\alpha,\beta \in \mathbb{R}$. Then</p>
+<p>$$
+(\alpha u+\beta v)\cdot w=\alpha(u\cdot w)+\beta(v\cdot w).
+
+$$</p>
+</summary>
+<div class="proof-content">
+<p>We write the vectors in coordinates:</p>
+<p>$$
+u=(u_1,\dots,u_n), \qquad
+v=(v_1,\dots,v_n), \qquad
+w=(w_1,\dots,w_n).
+$$</p>
+<p>Then</p>
+<p>$$
+\alpha u+\beta v
+=
+(\alpha u_1+\beta v_1,\dots,\alpha u_n+\beta v_n).
+$$</p>
+<p>Therefore,</p>
+<p>$$
+(\alpha u+\beta v)\cdot w
+=
+\sum_{i=1}^{n}(\alpha u_i+\beta v_i)w_i.
+$$</p>
+<p>Using distributivity in $\mathbb{R}$,</p>
+<p>$$
+\sum_{i=1}^{n}(\alpha u_i+\beta v_i)w_i
+=
+\sum_{i=1}^{n}\alpha u_iw_i
++
+\sum_{i=1}^{n}\beta v_iw_i.
+$$</p>
+<p>Since $\alpha$ and $\beta$ are constants,</p>
+<p>$$
+\sum_{i=1}^{n}\alpha u_iw_i
++
+\sum_{i=1}^{n}\beta v_iw_i
+=
+\alpha\sum_{i=1}^{n}u_iw_i
++
+\beta\sum_{i=1}^{n}v_iw_i.
+$$</p>
+<p>Thus,</p>
+<p>$$
+(\alpha u+\beta v)\cdot w
+=
+\alpha(u\cdot w)+\beta(v\cdot w).
+$$</p>
+<p>This proves the theorem.</p>
+</div>
+</details>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=af537ea2"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 </div>
 </div>
 </div>
