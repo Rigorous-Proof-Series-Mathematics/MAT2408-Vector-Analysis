@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Class 01</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>Integration</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.10.0/mermaid.esm.min.mjs';
   
   mermaid.initialize({ startOnLoad: true });
@@ -13274,9 +13274,58 @@ div#notebook {
 <main>
 <div class="border-box-sizing" id="notebook" tabindex="-1">
 <div class="container" id="notebook-container">
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=723ac9ad"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=58444922"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Theorem:-Linearity-of-the-Dot-Product">Theorem: Linearity of the Dot Product<a class="anchor-link" href="#Theorem:-Linearity-of-the-Dot-Product">¶</a></h2><p>Let $u, v, w \in \mathbb{R}^n$ and let $\alpha, \beta \in \mathbb{R}$. Then</p>
+<p>$$
+(\alpha u + \beta v)\cdot w
+=
+\alpha(u\cdot w)+\beta(v\cdot w).
+$$</p>
+<h3 id="Proof">Proof<a class="anchor-link" href="#Proof">¶</a></h3><p>We write the vectors in coordinates:</p>
+<p>$$
+u=(u_1,\dots,u_n), \qquad
+v=(v_1,\dots,v_n), \qquad
+w=(w_1,\dots,w_n).
+$$</p>
+<p>Then</p>
+<p>$$
+\alpha u+\beta v
+=
+(\alpha u_1+\beta v_1,\dots,\alpha u_n+\beta v_n).
+$$</p>
+<p>Therefore,</p>
+<p>$$
+(\alpha u+\beta v)\cdot w
+=
+\sum_{i=1}^{n}(\alpha u_i+\beta v_i)w_i.
+$$</p>
+<p>Using distributivity in $\mathbb{R}$,</p>
+<p>$$
+\sum_{i=1}^{n}(\alpha u_i+\beta v_i)w_i
+=
+\sum_{i=1}^{n}\alpha u_iw_i
++
+\sum_{i=1}^{n}\beta v_iw_i.
+$$</p>
+<p>Since $\alpha$ and $\beta$ are constants,</p>
+<p>$$
+\sum_{i=1}^{n}\alpha u_iw_i
++
+\sum_{i=1}^{n}\beta v_iw_i
+=
+\alpha\sum_{i=1}^{n}u_iw_i
++
+\beta\sum_{i=1}^{n}v_iw_i.
+$$</p>
+<p>Thus,</p>
+<p>$$
+(\alpha u+\beta v)\cdot w
+=
+\alpha(u\cdot w)+\beta(v\cdot w).
+$$</p>
+<p>This proves the theorem.</p>
 </div>
 </div>
 </div>
