@@ -13245,7 +13245,7 @@ div#notebook {
         }
 
         .math-block {
-            margin: 24px 55px;
+            margin: 0px;
             border-radius: 14px;
             background: var(--block-bg, #f7f7f7);
             border-left: 5px solid var(--block-border, #555);
@@ -13328,7 +13328,7 @@ div#notebook {
         }
 
         .math-index {
-            margin: 24px 55px 36px 55px;
+            margin: 0px;
             padding: 22px 26px;
             border-radius: 16px;
             background: #f8fafc;
@@ -13447,6 +13447,13 @@ div#notebook {
             padding-top: 0;
             border-top: none;
         }
+
+        .math-number {
+            color: #94a3b8;
+            font-size: 0.82em;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
         </style>
 </head>
 <body>
@@ -13457,16 +13464,15 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <nav id="math-index" class="math-index">
-<h2>Index</h2>
 <ul>
 <li class="math-index-chapter"><a href="#chapter-1">Chapter 1 — Vector Calculus</a></li>
 <li class="math-index-section"><a href="#section-1-1">Section 1.1 — Dot Product</a></li>
 <li class="math-index-section"><a href="#section-1-2">Section 1.2 — Dot Product</a></li>
 <li class="math-index-subsection"><a href="#subsection-1-2-1">Subsection 1.2.1 — Linearity</a></li>
-<li class="math-index-block math-index-theorem"><a href="#thm-dot-linearity">1.2.1.1 Theorem: Linearity of the Dot Product</a></li>
-<li class="math-index-block math-index-definition"><a href="#def-norm">1.2.1.1 Definition: Norm</a></li>
+<li class="math-index-block math-index-theorem"><a href="#thm-dot-linearity"><span class="math-number">1.2.1.1</span> Theorem: Linearity of the Dot Product</a></li>
+<li class="math-index-block math-index-definition"><a href="#def-norm"><span class="math-number">1.2.1.1</span> Definition: Norm</a></li>
 <li class="math-index-subsection"><a href="#subsection-1-2-2">Subsection 1.2.2 — Orthogonality</a></li>
-<li class="math-index-block math-index-lemma"><a href="#lem-zero-dot">1.2.2.1 Lemma: Zero Dot Product with Itself</a></li>
+<li class="math-index-block math-index-lemma"><a href="#lem-zero-dot"><span class="math-number">1.2.2.1</span> Lemma: Zero Dot Product with Itself</a></li>
 </ul>
 </nav>
 </div>
@@ -13510,7 +13516,7 @@ div#notebook {
 
         <details id="thm-dot-linearity" class="math-block theorem">
         <summary class="math-block-summary">
-        <h2 id="Linearity-of-the-Dot-Product">1.2.1.1 Theorem: Linearity of the Dot Product</h2><p>For all $u,v,w \in \mathbb{R}^n$ and $\alpha,\beta \in \mathbb{R}$,</p>
+        <h2 id="Linearity-of-the-Dot-Product"><span class="math-number">1.2.1.1</span> Theorem: Linearity of the Dot Product</h2><p>For all $u,v,w \in \mathbb{R}^n$ and $\alpha,\beta \in \mathbb{R}$,</p>
 <p>$$
 (\alpha u+\beta v)\cdot w=\alpha(u\cdot w)+\beta(v\cdot w).
 $$</p>
@@ -13536,7 +13542,7 @@ $$</p>
 
         <details id="def-norm" class="math-block definition">
         <summary class="math-block-summary">
-        <h2 id="Norm">1.2.1.1 Definition: Norm</h2><p>The norm of $v \in \mathbb{R}^n$ is</p>
+        <h2 id="Norm"><span class="math-number">1.2.1.1</span> Definition: Norm</h2><p>The norm of $v \in \mathbb{R}^n$ is</p>
 <p>$$
 \|v\|=\sqrt{v\cdot v}.
 $$</p>
@@ -13564,7 +13570,7 @@ $$</p>
 
         <details id="lem-zero-dot" class="math-block lemma">
         <summary class="math-block-summary">
-        <h2 id="Zero-Dot-Product-with-Itself">1.2.2.1 Lemma: Zero Dot Product with Itself</h2><p>If $v\cdot v=0$, then $v=0$.</p>
+        <h2 id="Zero-Dot-Product-with-Itself"><span class="math-number">1.2.2.1</span> Lemma: Zero Dot Product with Itself</h2><p>If $v\cdot v=0$, then $v=0$.</p>
         </summary>
         <div class="proof-content">
         <p>Since</p>
