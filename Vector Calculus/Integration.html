@@ -13436,6 +13436,17 @@ div#notebook {
             --block-border: #9333ea;
             --block-bg: #faf5ff;
         }
+        .math-block-details {
+            padding: 14px 26px 18px 26px;
+            border-top: 1px solid rgba(0,0,0,0.10);
+            background: rgba(255,255,255,0.55);
+        }
+
+        .math-block-details .math-block-links {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
         </style>
 </head>
 <body>
@@ -13446,7 +13457,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<nav id="math-index" class="math-index">
+        <nav id="math-index" class="math-index">
 <h2>Index</h2>
 <ul>
 <li class="math-index-block math-index-theorem"><a href="#theorem-1-1-linearity">1.1 Theorem: Linearity</a></li>
@@ -13460,24 +13471,24 @@ div#notebook {
 </ul>
 </nav>
 <details id="theorem-1-1-linearity" class="math-block theorem">
-<summary class="math-block-summary">
-<h2 id="Theorem:-Linearity">1.1 Theorem: Linearity</h2><p>For all $u,v,w \in \mathbb{R}^n$ and $\alpha,\beta \in \mathbb{R}$,</p>
+        <summary class="math-block-summary">
+        <h2 id="Theorem:-Linearity">1.1 Theorem: Linearity</h2><p>For all $u,v,w \in \mathbb{R}^n$ and $\alpha,\beta \in \mathbb{R}$,</p>
 <p>$$
 (\alpha u+\beta v)\cdot w=\alpha(u\cdot w)+\beta(v\cdot w).
 $$</p>
-</summary>
-<div class="proof-content">
-<p>By the definition of the dot product,</p>
+        </summary>
+        <div class="proof-content">
+        <p>By the definition of the dot product,</p>
 <p>$$
 (\alpha u+\beta v)\cdot w
 =
 \sum_{i=1}^n(\alpha u_i+\beta v_i)w_i.
 $$</p>
 <p>Distributing the terms proves the result.</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</details>
-
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13485,16 +13496,19 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<div id="definition-1-1-norm" class="math-block definition">
-<div class="math-block-summary">
-<h2 id="Definition:-Norm">1.1 Definition: Norm</h2><p>The norm of a vector $v \in \mathbb{R}^n$ is defined by</p>
+        <details id="definition-1-1-norm" class="math-block definition">
+        <summary class="math-block-summary">
+        <h2 id="Definition:-Norm">1.1 Definition: Norm</h2><p>The norm of a vector $v \in \mathbb{R}^n$ is defined by</p>
 <p>$$
 \|v\|=\sqrt{v\cdot v}.
 $$</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</div>
-
+        </summary>
+        <div class="math-block-details">
+        
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13502,20 +13516,20 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<details id="lemma-1-1-1-zero-vector" class="math-block lemma">
-<summary class="math-block-summary">
-<h2 id="Lemma:-Zero-Vector">1.1.1 Lemma: Zero Vector</h2><p>If $v\cdot v=0$, then $v=0$.</p>
-</summary>
-<div class="proof-content">
-<p>Since</p>
+        <details id="lemma-1-1-1-zero-vector" class="math-block lemma">
+        <summary class="math-block-summary">
+        <h2 id="Lemma:-Zero-Vector">1.1.1 Lemma: Zero Vector</h2><p>If $v\cdot v=0$, then $v=0$.</p>
+        </summary>
+        <div class="proof-content">
+        <p>Since</p>
 <p>$$
 v\cdot v=\sum_{i=1}^n v_i^2,
 $$</p>
 <p>each term must be zero. Hence $v_i=0$ for all $i$.</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</details>
-
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13523,19 +13537,19 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<details id="corollary-1-1-1-positivity-of-the-norm" class="math-block corollary">
-<summary class="math-block-summary">
-<h2 id="Corollary:-Positivity-of-the-Norm">1.1.1 Corollary: Positivity of the Norm</h2><p>For every $v\in\mathbb{R}^n$,</p>
+        <details id="corollary-1-1-1-positivity-of-the-norm" class="math-block corollary">
+        <summary class="math-block-summary">
+        <h2 id="Corollary:-Positivity-of-the-Norm">1.1.1 Corollary: Positivity of the Norm</h2><p>For every $v\in\mathbb{R}^n$,</p>
 <p>$$
 \|v\|\geq 0.
 $$</p>
-</summary>
-<div class="proof-content">
-<p>Since $\|v\|=\sqrt{v\cdot v}$ and $v\cdot v\geq 0$, the result follows.</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</details>
-
+        </summary>
+        <div class="proof-content">
+        <p>Since $\|v\|=\sqrt{v\cdot v}$ and $v\cdot v\geq 0$, the result follows.</p>
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13543,16 +13557,19 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<div id="axiom-1-1-additive-identity" class="math-block axiom">
-<div class="math-block-summary">
-<h2 id="Axiom:-Additive-Identity">1.1 Axiom: Additive Identity</h2><p>For every vector $v$ in a vector space $V$, there exists a vector $0\in V$ such that</p>
+        <details id="axiom-1-1-additive-identity" class="math-block axiom">
+        <summary class="math-block-summary">
+        <h2 id="Axiom:-Additive-Identity">1.1 Axiom: Additive Identity</h2><p>For every vector $v$ in a vector space $V$, there exists a vector $0\in V$ such that</p>
 <p>$$
 v+0=v.
 $$</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</div>
-
+        </summary>
+        <div class="math-block-details">
+        
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13560,23 +13577,23 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<details id="proposition-1-1-symmetry-of-the-dot-product" class="math-block proposition">
-<summary class="math-block-summary">
-<h2 id="Proposition:-Symmetry-of-the-Dot-Product">1.1 Proposition: Symmetry of the Dot Product</h2><p>For all $u,v\in\mathbb{R}^n$,</p>
+        <details id="proposition-1-1-symmetry-of-the-dot-product" class="math-block proposition">
+        <summary class="math-block-summary">
+        <h2 id="Proposition:-Symmetry-of-the-Dot-Product">1.1 Proposition: Symmetry of the Dot Product</h2><p>For all $u,v\in\mathbb{R}^n$,</p>
 <p>$$
 u\cdot v=v\cdot u.
 $$</p>
-</summary>
-<div class="proof-content">
-<p>By definition,</p>
+        </summary>
+        <div class="proof-content">
+        <p>By definition,</p>
 <p>$$
 u\cdot v=\sum_{i=1}^n u_i v_i.
 $$</p>
 <p>Since multiplication in $\mathbb{R}$ is commutative, $u_i v_i=v_i u_i$.</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</details>
-
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13584,16 +13601,19 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<div id="example-1-1-dot-product-in-mathbb-r-3" class="math-block example">
-<div class="math-block-summary">
-<h2 id="Example:-Dot-Product-in-$%5Cmathbb%7BR%7D%5E3$">1.1 Example: Dot Product in $\mathbb{R}^3$</h2><p>Let $u=(1,2,3)$ and $v=(4,5,6)$. Then</p>
+        <details id="example-1-1-dot-product-in-mathbb-r-3" class="math-block example">
+        <summary class="math-block-summary">
+        <h2 id="Example:-Dot-Product-in-$%5Cmathbb%7BR%7D%5E3$">1.1 Example: Dot Product in $\mathbb{R}^3$</h2><p>Let $u=(1,2,3)$ and $v=(4,5,6)$. Then</p>
 <p>$$
 u\cdot v=1\cdot4+2\cdot5+3\cdot6=32.
 $$</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</div>
-
+        </summary>
+        <div class="math-block-details">
+        
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
@@ -13601,17 +13621,20 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<div id="remark-1-1-geometric-meaning" class="math-block remark">
-<div class="math-block-summary">
-<h2 id="Remark:-Geometric-Meaning">1.1 Remark: Geometric Meaning</h2><p>The dot product also satisfies</p>
+        <details id="remark-1-1-geometric-meaning" class="math-block remark">
+        <summary class="math-block-summary">
+        <h2 id="Remark:-Geometric-Meaning">1.1 Remark: Geometric Meaning</h2><p>The dot product also satisfies</p>
 <p>$$
 u\cdot v=\|u\|\|v\|\cos\theta.
 $$</p>
 <p>So it measures how much one vector points in the direction of another.</p>
-<div class="math-block-links">↑ <a href="#math-index">index</a></div>
-</div>
-</div>
-
+        </summary>
+        <div class="math-block-details">
+        
+        <div class="math-block-links">↑ <a href="#math-index">index</a></div>
+        </div>
+        </details>
+        
 </div>
 </div>
 </div>
